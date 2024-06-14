@@ -1,82 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Básica con Barra de Navegación</title>
+    <!-- Configuración básica de la página -->
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración para un diseño responsivo -->
+    <title>Página Básica con Barra de Navegación</title> <!-- Título de la página -->
+
+    <!-- Estilos CSS internos para la página -->
     <style>
+        /* Estilo para el cuerpo de la página */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif; /* Fuente principal */
+            margin: 0; /* Sin margen alrededor del cuerpo */
+            padding: 0; /* Sin relleno alrededor del cuerpo */
         }
+        /* Estilo para el encabezado */
         header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
+            background-color: #333; /* Fondo color gris oscuro */
+            color: white; /* Texto en color blanco */
+            text-align: center; /* Texto centrado */
+            padding: 1em 0; /* Relleno arriba y abajo de 1em */
         }
+        /* Estilo para la barra de navegación */
         nav {
-            background-color: #333;
-            text-align: center;
+            background-color: #333; /* Fondo color gris oscuro */
+            text-align: center; /* Enlaces centrados */
         }
+        /* Estilo para los enlaces de navegación */
         nav a {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
+            display: inline-block; /* Mostrar los enlaces en línea */
+            color: white; /* Color del texto en blanco */
+            text-align: center; /* Texto centrado */
+            padding: 14px 20px; /* Relleno alrededor de los enlaces */
+            text-decoration: none; /* Sin subrayado en los enlaces */
         }
+        /* Efecto de hover para los enlaces de navegación */
         nav a:hover {
-            background-color: #111;
+            background-color: #111; /* Fondo color negro cuando se pasa el ratón por encima */
         }
-         footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
+        /* Estilo para el pie de página */
+        footer {
+            background-color: #333; /* Fondo color gris oscuro */
+            color: #fff; /* Texto en color blanco */
+            text-align: center; /* Texto centrado */
+            padding: 20px; /* Relleno de 20px */
+            margin-top: 20px; /* Margen superior de 20px */
+        }
+        /* Estilo para las secciones */
+        section {
+            font-family: Courier, monospace; /* Fuente Courier */
+            border: 1px black; /* Borde de 1px color negro */
+        }
+        /* Estilo específico para la sección "home" */
+        #home {
+            font-family: Arial, monospace; /* Fuente Arial */
+        }
+        /* Estilo específico para la sección "faq" */
+        #faq {
+            border-style: solid; /* Borde sólido */
+        }
+        /* Estilo para el elemento aside */
+        aside {
+            float: right; /* Flotar a la derecha */
+            border-style: solid; /* Borde sólido */
         }
     </style>
 </head>
 <body>
+    <!-- Encabezado de la página -->
     <header>
-        <h1>Mi Página Web</h1>
+        <h1>Technology Project!</h1> <!-- Título principal en el encabezado -->
     </header>
+
+    <!-- Barra de navegación -->
     <nav>
-        <a href="#nowhere">Team Member 1</a>
-        <a href="#services">Team Member 2</a>
-        <a href="#about">Team Member 3 </a>
+        <!-- Enlaces de navegación -->
+        <a href="">TEAM</a>
+        <a href="">Team Member 1</a>
+        <a href="">Team Member 2</a>
         <a href="#contact">Team Member 4</a>
         <a href="#faq">Team Member 5</a>
     </nav>
 
+    <!-- Contenido adicional flotando a la derecha -->
+    <aside>
+        <!-- Video de YouTube incrustado -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eXdVDhOGqoE?si=YIetR4zQpWx4q4yI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </aside>
+
+    <!-- Contenido principal de la página -->
     <main>
+        <!-- Sección de inicio -->
         <section id="home">
             <h2>Bienvenido a Mi Página Web</h2>
             <p>Esta es la sección de inicio.</p>
         </section>
+
+        <!-- Sección de servicios -->
         <section id="services">
             <h2>Servicios</h2>
             <p>Información sobre nuestros servicios.</p>
         </section>
+
+        <!-- Sección acerca de -->
         <section id="about">
             <h2>Acerca de</h2>
             <p>Información sobre nosotros.</p>
         </section>
+
+        <!-- Sección de contacto -->
         <section id="contact">
             <h2>Contacto</h2>
             <p>Cómo ponerse en contacto con nosotros.</p>
         </section>
+
+        <!-- Sección de preguntas frecuentes -->
         <section id="faq">
             <h2>FAQ</h2>
             <p>Preguntas frecuentes.</p>
         </section>
     </main>
 
-
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Mi Página Web</p>
+        <p>&copy; 2024 Mi Página Web</p> <!-- Derechos de autor -->
     </footer>
 </body>
 </html>
